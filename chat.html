@@ -5,11 +5,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chats - KoKoa Clone</title>
+    <title>More - KoKoa Clone</title>
     <link rel="stylesheet" href="css/styles.css" />
 </head>
 
-<body>
+<body id="chat-screen">
     <div class="status-bar">
         <div class="status-bar__column">
             <span>No Service</span>
@@ -28,79 +28,65 @@
         </div>
     </div>
 
-    <header class="screen-header">
-        <h1 class="screen-header__title">
-            Chats
-        </h1>
-        <div class="screen-header__icons">
+    <div class="alt-screen-header">
+        <div class="alt-screen-header__column">
+            <a href="chats.html">
+
+                <i class="fas fa-chevron-left fa-2x"></i>
+            </a>
+        </div>
+        <div class="alt-screen-header__column">
+            <div class="alt-screen-header__title">
+                Jeff
+            </div>
+        </div>
+        <div class="alt-screen-header__column">
             <span>
                 <i class="fas fa-search fa-lg"></i>
             </span>
             <span>
-                <i class="fas fa-comment-dots fa-lg"></i>
-            </span>
-            <span>
-                <i class="fas fa-music fa-lg"></i>
-            </span>
-            <span>
-                <i class="fas fa-cog fa-lg"></i>
+                <i class="fas fa-bars fa-lg"></i>
             </span>
         </div>
-    </header>
+    </div>
+    
+    <main class="main-screen main-chat">
+        <div class="chat__timestamp">
+            Tuseday, June 30, 2020
+        </div>
+        <div class="message-row">
+            <img src="https://ww.namu.la/s/b12d9d719fa3c19364fe24c217611ebf6d3ff31ffff95b3bdccea0f399ad06c493da13511624ee4a787ef0d8165cea7b78cea955a04fc210ba3c9be64301f2284cebe662ff4a1c82a2ac66ed825041a2" alt="">
+            <div class="message-row__content">
+                <span class="message-row__author">
+                    Jeffiy
+                </span>
+                <div class="message__info">
+                    <span class="message__bubble">Hi</span>   
+                    <span class="message__time">21:27</span>
 
 
+                </div>
+            </div>
+        </div>
+        <div class="message-row message-row--own">
+            <div class="message-row__content">
+                
+                <div class="message__info">
+                    <span class="message__bubble">Hi nice to meet you</span>   
+                    <span class="message__time">21:27</span>
+
+
+                </div>
+            </div>
+        </div>
+    </main>
     
 
 
-    <main class="main-screen">
-        <div class="user-component">
-            <div class="user-component__column">
-                <img src="https://ww.namu.la/s/27639876d90df73d588e980aa54f74738141d71ae74778535711a1aa4097ea397c4aa34b508547b0c5fa6129966be2fd6ae9f0cd26ba87df9097d79165df8d89c836178cd6d9179b6103c6ae6eb9ee7c49bfc0a82463a8d992585cc5f6fa50ad" 
-                class="user-component__avator" />
-                <div class="user-component__text">
-                    <h4 class="user-component__title">
-                        Jeff
-                    </h4>
-                    <h6 class="user-component__subtitle">
-                        Please check my kokoa accuont info
-                    </h6>
-                </div>
-            </div>
-            <div class="user-component__column">
-                <span class="user-component__time">21:22</span>
-                <div class="badge">1</div>
-            </div>
-        </div>
-        
-    </main>
 
 
 
-    <nav class="nav">
-        <ul class="nav__list">
-            <li class="nav__btn">
-                <a class="nav__link" href="friends.html">
-                    <i class="far fa-user fa-2x"></i></a>
-            </li>
-            <li class="nav__btn">
-                <a class="nav__link" href="chat.html">
-                    <span class="nav__notification badge">1</span>
-                    <i class="fas fa-comment fa-2x"></i>
-                </a>
-            </li>
-            <li class="nav__btn">
-                <a class="nav__link" href="find.html">
-                    <i class="fas fa-search fa-2x"></i>
-                </a>
-            </li>
-            <li class="nav__btn">
-                <a class="nav__link" href="more.html">
-                    <span class="nav__alert small-badge"></span>
-                    <i class="fas fa-ellipsis-h fa-2x"></i>
-                </a>
-            </li>
-        </ul>
-    </nav>
+    
 
     <script src="https://kit.fontawesome.com/ad1937f077.js" crossorigin="anonymous"></script>
 </body>
