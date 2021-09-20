@@ -1,107 +1,111 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chat with Jeff - KoKoa Clone</title>
-    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="main.css">
+    <title>Document</title>
 </head>
-
 <body>
     <div class="status-bar">
-        <div class="status-bar__column">
+        <div class="status-bar__content">
             <span>No Service</span>
-            <i class="fas fa-wifi"></i>
-
+            <i class="fas fa-wifi fa-sm"></i>
         </div>
-        <div class="status-bar__column">
-            <span>18:43</span>
+        <div class="status-bar__content">
+            00:00
         </div>
-        <div class="status-bar__column">
-            <span>
-                110%
-            </span>
-            <i class="fas fa-battery-full fa-lg"></i>
-            <i class="fas fa-bolt"></i>
+        <div class="status-bar__content">
+            <i class="fas fa-unlock-alt fa-sm"></i>
+            <span>11%</span>
+            <i class="fas fa-battery-quarter fa-lg"></i>
+            <i class="fas fa-bolt fa-sm"></i>
         </div>
     </div>
-
-    <header class="screen-header">
-        <h1 class="screen-header__title">
-            Chats
-        </h1>
-        <div class="screen-header__icons">
-            <span>
-                <i class="fas fa-search fa-lg"></i>
-            </span>
-            <span>
-                <i class="fas fa-comment-dots fa-lg"></i>
-            </span>
-            <span>
-                <i class="fas fa-music fa-lg"></i>
-            </span>
-            <span>
-                <i class="fas fa-cog fa-lg"></i>
-            </span>
-        </div>
-    </header>
-
-
     
-
-
-    <main class="main-screen">
-        <a href="chat.html">
-            <div class="user-component">
-                <div class="user-component__column">
-                    <img src="https://ww.namu.la/s/27639876d90df73d588e980aa54f74738141d71ae74778535711a1aa4097ea397c4aa34b508547b0c5fa6129966be2fd6ae9f0cd26ba87df9097d79165df8d89c836178cd6d9179b6103c6ae6eb9ee7c49bfc0a82463a8d992585cc5f6fa50ad" 
-                    class="user-component__avator" />
-                    <div class="user-component__text">
-                        <h4 class="user-component__title">
-                            Jeff
-                        </h4>
-                        <h6 class="user-component__subtitle">
-                            Please check my kokoa accuont info
-                        </h6>
-                    </div>
+    <div class="page-header">
+        <div class="page-header__column">
+            <div class="page-header__title">
+                Chats
+            </div>
+        </div>
+        <div class="page-header__column">
+            <div class="page-header__icons">
+                <div class="page-header__icon">
+                    <i class="fab fa-searchengin fa-2x"></i>
                 </div>
-                <div class="user-component__column">
-                    <span class="user-component__time">21:22</span>
-                    <div class="badge">1</div>
+                <div class="page-header__icon">
+                    <i class="fas fa-comment-medical fa-2x"></i>
+                </div>
+                <div class="page-header__icon">
+                    <i class="fas fa-music fa-2x"></i>
+                </div>
+                <div class="page-header__icon">
+                    <a href="settings.html">
+
+                        <i class="fas fa-cog fa-2x"></i>
+                    </a>
                 </div>
             </div>
-        </a>
-    </main>
+        </div>
 
+        
+    </div>
+    
+ 
+    <a class="pointer" href="chat.html">
 
+        <div class="chat-box">
+            <div class="chat-box__column">
+                <img class="img-lg" src="https://t1.daumcdn.net/cfile/tistory/99CFC4455E560AF331" alt="">
+                <div class="chat-box__content">
+    
+                    <div class="chat-box__title">Won-Young</div>
+                    <div class="chat-box__subtitle">Please check My Kakao Account info</div>
+                </div>
+            </div>
+            <div class="chat-box__column">
+                <div class="chat-box__content chat-box__end">
+    
+                    <div>21:22</div>
+                    <div>1</div>
+                </div>
+            </div>
+        </div>
+    </a>
 
-    <nav class="nav">
-        <ul class="nav__list">
-            <li class="nav__btn">
-                <a class="nav__link" href="friends.html">
-                    <i class="far fa-user fa-2x"></i></a>
-            </li>
-            <li class="nav__btn">
-                <a class="nav__link" href="chats.html">
-                    <span class="nav__notification badge">1</span>
-                    <i class="fas fa-comment fa-2x"></i>
-                </a>
-            </li>
-            <li class="nav__btn">
-                <a class="nav__link" href="find.html">
-                    <i class="fas fa-search fa-2x"></i>
-                </a>
-            </li>
-            <li class="nav__btn">
-                <a class="nav__link" href="more.html">
-                    <span class="nav__alert small-badge"></span>
-                    <i class="fas fa-ellipsis-h fa-2x"></i>
-                </a>
-            </li>
-        </ul>
-    </nav>
+ 
+
+    <div class="nav-bar">
+        <div class="nav-bar__icon">
+            <a href="freinds.html">
+                <i class="far fa-user fa-2x">
+                </i>
+            </a>
+        </div>
+        <div class="nav-bar__icon">
+            <a href="chats.html">
+                <i class="fas fa-comment fa-2x">
+                    <span class="badge">1</span>
+                </i>
+            </a>
+        </div>
+        <div class="nav-bar__icon">
+            <a href="find.html">
+                <i class="fab fa-searchengin fa-2x"></i>
+            </a>
+        </div>
+        <div class="nav-bar__icon">
+            <a href="more.html">
+
+                <i class="fas fa-ellipsis-h fa-2x">
+                    <span class="badge-dot"></span>
+                </i>
+            </a>
+        </div>
+
+    </div>
 
     <div id="no-mobile">
         <span>
@@ -109,7 +113,9 @@
         </span>
     </div>
 
-    <script src="https://kit.fontawesome.com/ad1937f077.js" crossorigin="anonymous"></script>
+    <script
+    src="https://kit.fontawesome.com/6478f529f2.js"
+    crossorigin="anonymous"
+  ></script>
 </body>
-
 </html>

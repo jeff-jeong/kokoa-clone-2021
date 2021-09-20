@@ -1,117 +1,163 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>More - KoKoa Clone</title>
-    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="main.css">
+    <title>Settings - KaKao Clone</title>
 </head>
-
 <body>
     <div class="status-bar">
-        <div class="status-bar__column">
+        <div class="status-bar__content">
             <span>No Service</span>
-            <i class="fas fa-wifi"></i>
-
+            <i class="fas fa-wifi fa-sm"></i>
         </div>
-        <div class="status-bar__column">
-            <span>18:43</span>
+        <div class="status-bar__content">
+            00:00
         </div>
-        <div class="status-bar__column">
-            <span>
-                110%
-            </span>
-            <i class="fas fa-battery-full fa-lg"></i>
-            <i class="fas fa-bolt"></i>
+        <div class="status-bar__content">
+            <i class="fas fa-unlock-alt fa-sm"></i>
+            <span>11%</span>
+            <i class="fas fa-battery-quarter fa-lg"></i>
+            <i class="fas fa-bolt fa-sm"></i>
         </div>
     </div>
+    
+    <div class="status-header">
+      <a href="freinds.html">
+        <i class="fas fa-chevron-left fa-2x"></i>
+      </a>
+        
+        <span>Settings</span>
+        <a href="find.html">
+          <i class="fab fa-searchengin fa-2x"></i>
+        </a>
+        
+    </div>
 
-    <div class="alt-screen-header">
-        <div class="alt-screen-header__column">
-            <a href="more.html">
-
-                <i class="fas fa-chevron-left fa-2x"></i>
-            </a>
+  <div class="setting-main">
+        <div class="setting-row">
+          <div class="setting-column">
+            <i class="fas fa-bullhorn"></i>
+            <span>Notices</span>
+          </div>
+          <div class="setting-column"></div>
         </div>
-        <div class="alt-screen-header__column">
-            <div class="alt-screen-header__title">
-                Settings
+        <div class="setting-row">
+            <div class="setting-column">
+                <i class="fas fa-flask fa-2x"></i>
+              <span>Kakao Lab</span>
             </div>
-        </div>
-        <div class="alt-screen-header__column">
-            <i class="fas fa-search fa-lg"></i>
-        </div>
+            <div class="setting-column"></div>
+          </div>
+          <div class="setting-row">
+            <div class="setting-column">
+                <i class="fas fa-bell fa-2x"></i>
+              <span>Version</span>
+            </div>
+            <div class="setting-column">
+                <span>Lastest Version</span>
+            </div>
+          </div>
+          <div class="setting-border"></div>
+          <div class="setting-row">
+            <div class="setting-column">
+                <i class="fas fa-lock fa-2x"></i>
+              <span>Privacy</span>
+            </div>
+            <div class="setting-column"></div>
+          </div>
+          <div class="setting-row">
+            <div class="setting-column">
+                <i class="fas fa-bell"></i>
+              <span>Notifications</span>
+            </div>
+            <div class="setting-column"></div>
+          </div>
+          <div class="setting-row">
+            <div class="setting-column">
+                <i class="fas fa-users"></i>
+              <span>Friends</span>
+            </div>
+            <div class="setting-column"></div>
+          </div>
+          <div class="setting-row">
+            <div class="setting-column">
+                <i class="fas fa-comment-dots"></i>
+              <span>Chats</span>
+            </div>
+            <div class="setting-column"></div>
+          </div>
+          <div class="setting-row">
+            <div class="setting-column">
+                <i class="fas fa-adjust"></i>
+              <span>Display</span>
+              <span class="badge">N</span>
+            </div>
+            <div class="setting-column"></div>
+          </div>
+          <div class="setting-row">
+            <div class="setting-column">
+                <i class="fas fa-brush"></i>
+              <span>Themes</span>
+              <span class="badge">N</span>
+            </div>
+            <div class="setting-column">
+                <span>Default theme</span>
+            </div>
+          </div>
+          <div class="setting-row">
+            <div class="setting-column">
+                <i class="fas fa-phone-alt"></i>
+              <span>Call</span>
+            </div>
+            <div class="setting-column"></div>
+          </div>
+  </div>
+
+ 
+
+  <div class="nav-bar">
+    <div class="nav-bar__icon">
+        <a href="freinds.html">
+            <i class="far fa-user fa-2x">
+            </i>
+        </a>
     </div>
-    
-    <main class="main-screen">
-        <ul class="setting-list">
-            <li class="settings__setting">
-                <div class="settings__setting-column">
-                    <i class="fas fa-leaf"></i>
-                    <span>Notices</span>
-                </div>
-                <div class="settings__setting-column"></div>
-            </li>
-            <li class="settings__setting">
-                <div class="settings__setting-column">
-                    <i class="fas fa-file-contract"></i>
-                    <span>KaKao Lab</span>
-                </div>
-                <div class="settings__setting-column"></div>
-            </li>
-            <li class="settings__setting">
-                <div class="settings__setting-column">
+    <div class="nav-bar__icon">
+        <a href="chats.html">
+            <i class="far fa-comment fa-2x">
+                <span class="badge">1</span>
+            </i>
+        </a>
+    </div>
+    <div class="nav-bar__icon">
+        <a href="find.html">
+            <i class="fab fa-searchengin fa-2x"></i>
+        </a>
+    </div>
+    <div class="nav-bar__icon">
+        <a href="more.html">
 
-                    <i class="fas fa-balance-scale"></i>
-                    <span>Version</span>
-                </div>
-                <div class="settings__setting-column">
-                    Lastest Version
-                </div>
-            </li>
-        </ul>
-    </main>
-    
+            <i class="fas fa-ellipsis-h fa-2x">
+                <span class="badge-dot"></span>
+            </i>
+        </a>
+    </div>
 
-
-
-
-
-    <nav class="nav">
-        <ul class="nav__list">
-            <li class="nav__btn">
-                <a class="nav__link" href="friends.html">
-                    <i class="far fa-user fa-2x"></i></a>
-            </li>
-            <li class="nav__btn">
-                <a class="nav__link" href="chat.html">
-                    <span class="nav__notification badge">1</span>
-                    <i class="far fa-comment fa-2x"></i>
-                </a>
-            </li>
-            <li class="nav__btn">
-                <a class="nav__link" href="find.html">
-                    <i class="fas fa-search fa-2x"></i>
-                </a>
-            </li>
-            <li class="nav__btn">
-                <a class="nav__link" href="more.html">
-                    <span class="nav__alert small-badge"></span>
-                    <i class="fas fa-ellipsis-h fa-2x"></i>
-                </a>
-            </li>
-        </ul>
-    </nav>
+</div>
 
     <div id="no-mobile">
-        <span>
-            Your Screen is Too Big
-        </span>
-    </div>
+      <span>
+          Your Screen is Too Big
+      </span>
+  </div>
 
-    <script src="https://kit.fontawesome.com/ad1937f077.js" crossorigin="anonymous"></script>
+
+    <script
+    src="https://kit.fontawesome.com/6478f529f2.js"
+    crossorigin="anonymous"
+  ></script>
 </body>
-
 </html>

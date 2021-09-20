@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;400;700&display=swap');
+
+@import url(reset.css);
+@import url(login-page.css);
+@import url(status-bar.css);
+@import url(friends.css);
+@import url(page-header.css);
+@import url(chat-box.css);
+@import url(nav-bar.css);
+@import url(variable.css);
+@import url(badge.css);
+@import url(chats.css);
+@import url(find.css);
+@import url(icon-row.css);
+@import url(more.css);
+@import url(settings.css);
+@import url(status-header.css);
+@import url(chat.css);
+
+
+body{
+    font-family: 'Noto Sans JP', sans-serif;
+    color:#424242;
+    padding-top:30px;
+    box-sizing: border-box;
+}
+
+.pointer {
+    cursor: pointer;
+}
+
+
+
+#no-mobile{
+    z-index:99;
+    background-image: url(https://image.winudf.com/v2/image1/YnJvY2subGVzbmFyYWxsY2hhbXBpb25fc2NyZWVuXzBfMTU5NzAxOTIxM18wNzI/screen-0.jpg?fakeurl=1&type=.jpg);
+    background-color: yellow;
+    width:100vw;
+    height:100vh;
+    top:0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position:absolute;
+    font-size:33px;
+    font-weight: 600;
+    color:white;
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: center center;
+}
+
+@media screen  and (max-width:650px) {
+    #no-mobile{
+        display:none;
+    }
+    
+}
